@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'ice',
+  :git => 'https://github.com/mdsol/ice_cookbook',
+    
+cookbook 'cron',
+  :git => 'https://github.com/opscode-cookbooks/cron',
+
+cookbook 'ntp',
+  :git => 'https://github.com/gmiranda23/ntp.git',
+
+cookbook 'postfix',
+  :git => 'https://github.com/opscode-cookbooks/postfix',
+
+cookbook 'sudo',
+  :git => 'https://github.com/opscode-cookbooks/sudo',
+
+cookbook 'system',
+  :git => 'https://github.com/xhost-cookbooks/system',

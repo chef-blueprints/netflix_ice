@@ -1,0 +1,96 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (2.4.0)
+    artifact (1.12.1)
+      windows (>= 0.0.0)
+    bluepill (2.3.1)
+      rsyslog (>= 0.0.0)
+    build-essential (2.0.4)
+    chef-sugar (2.0.0)
+    chef_handler (1.1.6)
+    hostsfile (2.4.5)
+    java (1.22.0)
+    nginx (2.7.4)
+      apt (~> 2.2)
+      bluepill (~> 2.3)
+      build-essential (~> 2.0)
+      ohai (~> 2.0)
+      runit (~> 1.2)
+      yum-epel (~> 0.3)
+    ohai (2.0.1)
+    openssl (2.0.0)
+      chef-sugar (>= 0.0.0)
+    rsyslog (1.12.2)
+    runit (1.5.10)
+      build-essential (>= 0.0.0)
+      yum (~> 3.0)
+      yum-epel (>= 0.0.0)
+    tomcat (0.16.0)
+      java (>= 0.0.0)
+      openssl (>= 0.0.0)
+    windows (1.31.0)
+      chef_handler (>= 0.0.0)
+    yum (3.2.2)
+    yum-epel (0.3.6)
+      yum (~> 3.0)
+
+GIT
+  remote: https://github.com/gmiranda23/ntp.git
+  ref: v1.6.2
+  sha: 22b4a25d8412db415abf3892fd5918cc7abca5ae
+  specs:
+    ntp (1.6.2)
+
+GIT
+  remote: https://github.com/mdsol/ice_cookbook
+  ref: 193e2f28233d49b386cc9f866d8aaef0d4ec5243
+  sha: 193e2f28233d49b386cc9f866d8aaef0d4ec5243
+  specs:
+    ice (0.2.11)
+      apt (>= 0.0.0)
+      artifact (>= 0.0.0)
+      java (>= 0.0.0)
+      nginx (>= 0.0.0)
+      openssl (>= 0.0.0)
+      tomcat (>= 0.0.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/cron
+  ref: v1.4.0
+  sha: fe1611517bdd8b95fe85d3af5739e96c21b9411d
+  specs:
+    cron (1.4.0)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/postfix
+  ref: v3.3.1
+  sha: acebcc23003c821579c2c79c8d650db445dac604
+  specs:
+    postfix (3.3.1)
+
+GIT
+  remote: https://github.com/opscode-cookbooks/sudo
+  ref: v2.6.0
+  sha: 959b351fde2e9e61e6fd0f3d8a372751d6389171
+  specs:
+    sudo (2.6.0)
+
+GIT
+  remote: https://github.com/xhost-cookbooks/system
+  ref: v0.3.2
+  sha: 0564b30052923c9e9d5192c52a6dbe9e8f2f9d7b
+  specs:
+    system (0.3.2)
+      apt (>= 0.0.0)
+      cron (>= 0.0.0)
+      hostsfile (>= 0.0.0)
+
+DEPENDENCIES
+  cron (>= 0)
+  ice (>= 0)
+  ntp (>= 0)
+  postfix (>= 0)
+  sudo (>= 0)
+  system (>= 0)
+

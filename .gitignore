@@ -1,0 +1,5 @@
+.vagrant/
+/node.json
+/Vagrantfile
+/cookbooks/
+/tmp/
